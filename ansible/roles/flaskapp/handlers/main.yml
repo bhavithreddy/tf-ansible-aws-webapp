@@ -1,0 +1,10 @@
+- name: restart nginx
+  ansible.builtin.systemd:
+    name: nginx
+    state: restarted
+
+- name: restart flaskapp
+  ansible.builtin.systemd:
+    name: flaskapp
+    state: restarted
+    daemon_reload: true

@@ -1,0 +1,6 @@
+- name: Deploy Flask hello-world app behind Nginx
+  hosts: tag_webserver
+  become: true
+
+  roles:
+    - flaskapp

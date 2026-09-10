@@ -1,0 +1,141 @@
+create_file: tf-ansible-aws-webapp/.gitignore
+
+# ============================================================
+
+# Python
+
+# ============================================================
+
+# Virtual environments
+
+venv/
+.venv/
+env/
+
+# Python cache
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+
+build/
+dist/
+*.egg-info/
+
+# Environment variables
+
+.env
+.env.*
+
+# ============================================================
+
+# Terraform
+
+# ============================================================
+
+# Terraform working directory
+
+**/.terraform/*
+
+# Terraform state files
+
+*.tfstate
+*.tfstate.*
+
+# Terraform crash logs
+
+crash.log
+crash.*.log
+
+# Terraform variable files (may contain secrets)
+
+*.tfvars
+*.tfvars.json
+
+# Terraform plan files
+
+*.tfplan
+*.tfplan.*
+
+# Terraform override files
+
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# ============================================================
+
+# Sensitive files
+
+# ============================================================
+
+*.pem
+*.key
+*.crt
+
+# AWS credentials
+
+.aws/
+credentials
+credentials.json
+
+# ============================================================
+
+# Ansible
+
+# ============================================================
+
+# Ansible retry files
+
+*.retry
+
+# Ansible vault passwords
+
+.vault_pass
+.vault_password
+
+# ============================================================
+
+# IDE / Editors
+
+# ============================================================
+
+# Visual Studio Code
+
+.vscode/
+
+# JetBrains
+
+.idea/
+
+# Vim
+
+*.swp
+*.swo
+
+# ============================================================
+
+# Operating System
+
+# ============================================================
+
+# macOS
+
+.DS_Store
+
+# Windows
+
+Thumbs.db
+Desktop.ini
+
+# ============================================================
+
+# Logs
+
+# ============================================================
+
+*.log
+logs/

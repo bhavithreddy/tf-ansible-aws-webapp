@@ -1,0 +1,14 @@
+[Unit]
+Description=Flask Hello World App
+After=network.target
+
+[Service]
+User=ec2-user
+WorkingDirectory={{ app_install_dir }}
+Environment="PATH={{ app_install_dir }}/venv/bin"
+ExecStart={{ app_install_dir }}/venv/bin/python3 {{ app_install_dir }}/app.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
